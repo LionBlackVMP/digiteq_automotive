@@ -1,0 +1,64 @@
+@use "./../../general/variables" as *;
+.section {
+  .description {
+    display: flex;
+    padding: 10px 0 0;
+    .description_content {
+      margin-right: 20px;
+      .title {
+        line-height: 140%;
+        margin: 0 0 8px 0;
+        font-size: $fs-title;
+        font-family: Avenir;
+        font-weight: $fw-bold;
+      }
+      .title_text {
+        line-height: 190%;
+        font-size: $fs-general;
+        font-weight: $fw-semiBold;
+        margin: 0 0 70px;
+      }
+    }
+    .description_imgs {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      position: relative;
+      :nth-child(1) {
+        width: 530px;
+        height: 280px;
+        grid-row: 1;
+        grid-column: 2 / span 10;
+      }
+      :nth-child(2) {
+        padding-top: 3%;
+        width: 280px;
+        height: 280px;
+        grid-column: 1 / -1;
+        grid-row: 2; // make this image be on the same row
+      }
+      :nth-child(3) {
+        width: 280px;
+        height: 280px;
+        grid-column: 7 / -1;
+        grid-row: 2;
+        position: relative;
+        bottom: 10%;
+        left: 2%;
+      }
+    }
+  }
+  .usp {
+    margin: 110px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .item {
+      max-width: 250px;
+      text-align: center;
+      .item_text {
+        font-size: $fs-small;
+        font-weight: $fw-semiBold;
+      }
+    }
+  }
+}

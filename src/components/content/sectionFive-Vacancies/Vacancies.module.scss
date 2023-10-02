@@ -1,0 +1,27 @@
+@use "./../../general/variables" as *;
+.section {
+  background: linear-gradient(
+    to right,
+    rgb(4, 65, 140) 0%,
+    rgb(4, 65, 140) 1150px,
+    rgba(4, 65, 140, 0.25) 100%
+  );
+  min-height: 450px;
+  color: #fff;
+  .text_contain {
+    width: 56%;
+  }
+  .title {
+    padding: 70px 0 0;
+    margin: 0 0 40px 0;
+    font-size: $fs-title;
+    font-family: Avenir;
+    font-weight: $fw-bold;
+  }
+  .title_text {
+    font-size: $fs-small;
+    line-height: 200%;
+    font-weight: $fw-regular;
+    margin: 20px 0 40px;
+  }
+}

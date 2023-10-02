@@ -1,0 +1,148 @@
+@use "./../../general/variables" as *;
+.section {
+  background: url("./../../../assets/imgs/sectionProducts/vlny.png"), #04418c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 875px;
+  margin-bottom: 100px;
+  .title {
+    padding: 120px 0 0;
+    margin: 0 0 40px 0;
+    font-size: $fs-title;
+    font-family: Avenir;
+    font-weight: $fw-bold;
+  }
+  .title_text {
+    font-size: $fs-small;
+    font-weight: $fw-semiBold;
+    margin: 20px 0 40px;
+  }
+
+  .item_text {
+    padding: 0 0 3px;
+    margin-bottom: 100px;
+    a {
+      border-bottom: 1px solid #ffa500;
+      text-decoration: none;
+    }
+    a:active,
+    a:visited {
+      color: #ffa500;
+    }
+  }
+}
+.item {
+  z-index: 1;
+  background-size: 85%, contain;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  display: flex;
+
+  max-width: 285px;
+  min-height: 280px;
+
+  a {
+    opacity: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  .item_title {
+    position: relative;
+    flex: 0 1 18%;
+    transition-duration: 0.5s;
+    font-weight: $fw-bold;
+    font-size: 23px;
+  }
+  .item_description {
+    font-weight: $fw-bold;
+    font-size: $fs-small;
+    flex: 0 1 25%;
+    position: relative;
+    visibility: hidden;
+  }
+  a:hover {
+    .item_title {
+      opacity: 1;
+      position: relative;
+      transform: translateY(-185px);
+      transition-duration: 0.5s;
+      font-weight: $fw-bold;
+    }
+    .item_description {
+      position: relative;
+      visibility: visible;
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+.item_content:hover {
+  transition-duration: 0.2s;
+  background: rgba(255, 166, 0, 0.8);
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  margin: 80px 10px 0 0;
+  justify-content: center;
+  align-items: center;
+
+  .leftArrow,
+  .rightArrow {
+    border: none;
+    background: none;
+    margin: 0 25px;
+    height: 42px;
+    width: 42px;
+    background-size: cover;
+  }
+  .leftArrow {
+    background-image: url(./../../../assets/imgs/sectionProducts/leftArrow.svg);
+  }
+
+  .rightArrow {
+    background-image: url(./../../../assets/imgs/sectionProducts/rightArrow.svg);
+  }
+  .leftArrow:hover,
+  .rightArrow:hover {
+    cursor: pointer;
+  }
+  .rightArrow:hover {
+    background-image: url(./../../../assets/imgs/sectionProducts/rightArrowHover.svg);
+  }
+  .leftArrow:hover {
+    background-image: url(./../../../assets/imgs/sectionProducts/leftArrowHover.svg);
+  }
+}
+.item_one {
+  background-image: url(./../../../assets/imgs/sectionProducts/videoCapture.png),
+    linear-gradient(#1c4d8b, #1c4d8b);
+}
+.item_two {
+  background-image: url(./../../../assets/imgs/sectionProducts/simulators.png),
+    linear-gradient(#1c4d8b, #1c4d8b);
+}
+
+.item_three {
+  background-image: url(./../../../assets/imgs/sectionProducts/testBenches.png),
+    linear-gradient(#1c4d8b, #1c4d8b);
+}
+.item_four {
+  background-image: url(./../../../assets/imgs/sectionProducts/videoConvertors.png),
+    linear-gradient(#1c4d8b, #1c4d8b);
+}
+.item_five {
+  background-image: url(./../../../assets/imgs/sectionProducts/testSuitcases.png),
+    linear-gradient(#1c4d8b, #1c4d8b);
+  background-position: 50% 50%;
+}
+.item_six {
+  background-image: url(./../../../assets/imgs/sectionProducts/customDesign.png),
+    linear-gradient(#1c4d8b, #1c4d8b);
+}

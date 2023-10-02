@@ -1,0 +1,36 @@
+@use "variables" as *;
+* {
+  font-size: $fs-general;
+  font-family: OpenSans;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+}
+.content {
+  margin-top: 122px;
+}
+.button {
+  width: 280px;
+  height: 52px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #ffa500;
+  color: #fefefe;
+  font-weight: $fw-semiBold;
+  font-size: 18px;
+}
+.button:hover {
+  background-color: #1c4d8b;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}

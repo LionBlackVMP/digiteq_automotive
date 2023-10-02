@@ -1,0 +1,104 @@
+@use "./../general/variables" as *;
+li {
+  list-style: none;
+}
+.section {
+  .content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      margin-right: 80px;
+      align-self: center;
+    }
+    .footer_menu {
+      display: flex;
+
+      width: 100%;
+      ul:nth-child(1) {
+        width: 45%;
+      }
+      ul:nth-child(2) {
+        width: 30%;
+      }
+      ul:nth-child(3) {
+        width: 25%;
+      }
+
+      .footer_menu_list {
+        .item_title {
+          margin-bottom: 20px;
+          a {
+            color: #000000;
+            font-family: OpenSans;
+            font-weight: $fw-semiBold;
+            font-size: $fs-small;
+          }
+          a:hover {
+            color: #04418c;
+            transition-duration: 0.5s;
+          }
+        }
+
+        .item {
+          a {
+            font-size: 14px;
+            color: gray;
+          }
+          padding-bottom: 20px;
+          a:hover {
+            color: #ffa500;
+            transition-duration: 0.5s;
+          }
+        }
+        .item::before {
+          content: url("./../../assets/imgs/footer/carka.png");
+          margin-right: 5px;
+          position: relative;
+          top: 2px;
+          transform: scale(0.7);
+        }
+      }
+      .footer_menu_icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .icons {
+          svg {
+            fill: #8b8c92;
+          }
+          svg:hover {
+            fill: orange;
+            transition-duration: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    margin: 20px 0;
+    display: flex;
+
+    .copyright_description {
+      flex-basis: 40%;
+    }
+    .copyright_description div {
+      font-size: 13px;
+    }
+    .settings {
+      margin: 0 0 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 60%;
+    }
+    a {
+      font-size: 13px;
+      color: #ffa500;
+    }
+    a:hover {
+      color: #04418c;
+      transition-duration: 0.5s;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-weight: 400;
+  font-family: "OpenSans";
+  src: url("../../assets/fonts/openSans/OpenSans-Regular.woff2");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "OpenSans";
+  src: url("../../assets/fonts/openSans/OpenSans-SemiBold.woff2");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Avenir";
+  src: url("../../assets/fonts/avenir/Avenir-DemiBold.woff2");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Avenir";
+  src: url("../../assets/fonts/avenir/Avenir-Bold.woff2");
+}
+
+$fs-title: 42px;
+$fs-general: 17px;
+$fs-small: 16px;
+$fw-regular: 400;
+$fw-semiBold: 600;
+$fw-bold: 700;
